@@ -40,7 +40,7 @@ module OmniAuth
       #    require 'omniauth-azure-activedirectory'
       #
       #    use OmniAuth::Builder do
-      #      provider :azure_activedirectory, ENV['AAD_KEY'], ENV['AAD_TENANT']
+      #      provider :azureactivedirectory, ENV['AAD_KEY'], ENV['AAD_TENANT']
       #    end
       #
       args [:client_id, :tenant]
@@ -434,4 +434,4 @@ module OmniAuth
   end
 end
 
-OmniAuth.config.add_camelization 'azure_activedirectory', 'AzureActiveDirectory'
+OmniAuth.config.add_camelization 'azureactivedirectory', 'AzureActiveDirectory'
