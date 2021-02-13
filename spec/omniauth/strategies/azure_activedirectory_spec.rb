@@ -207,7 +207,7 @@ describe OmniAuth::Strategies::AzureActiveDirectory do
     end
 
     context 'after a nonce is set' do
-      before(:each) { @nonce = strategy.send(:new_nonce) }
+      before(:each) { @nonce = strategy.send(:store_nonce) }
       it 'should match' do
         expect(subject).to eq @nonce
       end
