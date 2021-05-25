@@ -165,6 +165,7 @@ module OmniAuth
           redirect_uri: redirect_uri,
           response_mode: response_mode,
           response_type: response_type,
+          prompt: prompt,
           nonce: new_nonce,
           state: session["_csrf_token"]
         }.to_a
@@ -194,6 +195,10 @@ module OmniAuth
 
       def scope
         options[:scope] || "openid"
+      end
+
+      def prompt
+        options[:prompt] || "login"
       end
 
       def redirect_uri
