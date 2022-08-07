@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rake', '~> 12.3.3'
   s.add_development_dependency 'rspec', '~> 3.3'
-  s.add_development_dependency 'rubocop', '~> 0.32'
+  s.add_development_dependency 'rubocop', '~> 0.93'
   s.add_development_dependency 'simplecov', '~> 0.10'
   s.add_development_dependency 'webmock', '~> 3'
 end
