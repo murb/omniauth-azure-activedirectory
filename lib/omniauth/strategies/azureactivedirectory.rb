@@ -25,6 +25,7 @@ require 'omniauth'
 require 'openssl'
 require 'securerandom'
 require 'base64'
+require 'net/http'
 
 module OmniAuth
   module Strategies
